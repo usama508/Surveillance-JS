@@ -1,0 +1,537 @@
+.ai-flag-list .ai-flag {
+    display: block;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.ai-flag-list .ai-flag canvas {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border: 1px solid #d2d2d2;
+    padding: 5px;
+}
+
+[data-ai-translator],
+[data-ai-translator-button] {
+    cursor: pointer;
+}
+
+.ai-translator-dropdown-wrap {
+    position: relative;
+}
+
+.ai-translator-dropdown {
+    position: absolute;
+    z-index: 1;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 200px;
+    min-width: 200px;
+    height: auto;
+    max-height: 300px;
+    border: 1px solid #d2d2d2;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.175);
+    background: #fff;
+    display: none !important;
+}
+
+.ai-translator-dropdown.active {
+    display: block !important;
+}
+
+.ai-translator-dropdown ul {
+    display: block;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%;
+}
+
+.ai-translator-dropdown ul li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    height: 32px;
+    padding: 0 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.ai-translator-dropdown ul li:nth-child(1) {
+    border-radius: 4px 4px 0 0;
+}
+
+.ai-translator-dropdown ul li:nth-last-child(1) {
+    border-radius: 0 0 4px 4px;
+}
+
+.ai-translator-dropdown ul li:hover {
+    background: #337ab7;
+    color: #fff;
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag {
+    display: block;
+    padding-right: 5px;
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span {
+    display: block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-en {
+    background-image: url('../images/en.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-af {
+    background-image: url('../images/af.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-sq {
+    background-image: url('../images/sq.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-am {
+    background-image: url('../images/am.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-ar {
+    background-image: url('../images/ar.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-hy {
+    background-image: url('../images/hy.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-az {
+    background-image: url('../images/az.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-eu {
+    background-image: url('../images/eu.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-be {
+    background-image: url('../images/be.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-bn {
+    background-image: url('../images/bn.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-bs {
+    background-image: url('../images/bs.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-bg {
+    background-image: url('../images/bg.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-ca {
+    background-image: url('../images/ca.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-ceb {
+    background-image: url('../images/ceb.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-ny {
+    background-image: url('../images/ny.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-zh-CN {
+    background-image: url('../images/zh-CN.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-zh-TW {
+    background-image: url('../images/zh-TW.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-co {
+    background-image: url('../images/co.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-hr {
+    background-image: url('../images/hr.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-cs {
+    background-image: url('../images/cs.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-da {
+    background-image: url('../images/da.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-nl {
+    background-image: url('../images/nl.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-eo {
+    background-image: url('../images/eo.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-et {
+    background-image: url('../images/et.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-tl {
+    background-image: url('../images/tl.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-fi {
+    background-image: url('../images/fi.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-fr {
+    background-image: url('../images/fr.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-fy {
+    background-image: url('../images/fy.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-gl {
+    background-image: url('../images/gl.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-ka {
+    background-image: url('../images/ka.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-de {
+    background-image: url('../images/de.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-el {
+    background-image: url('../images/el.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-gu {
+    background-image: url('../images/gu.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-ht {
+    background-image: url('../images/ht.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-ha {
+    background-image: url('../images/ha.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-haw {
+    background-image: url('../images/haw.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-iw {
+    background-image: url('../images/iw.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-hi {
+    background-image: url('../images/hi.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-hmn {
+    background-image: url('../images/hmn.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-hu {
+    background-image: url('../images/hu.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-is {
+    background-image: url('../images/is.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-ig {
+    background-image: url('../images/ig.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-id {
+    background-image: url('../images/id.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-ga {
+    background-image: url('../images/ga.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-it {
+    background-image: url('../images/it.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-ja {
+    background-image: url('../images/ja.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-jw {
+    background-image: url('../images/jw.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-kn {
+    background-image: url('../images/kn.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-kk {
+    background-image: url('../images/kk.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-km {
+    background-image: url('../images/km.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-ko {
+    background-image: url('../images/ko.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-ku {
+    background-image: url('../images/ku.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-ky {
+    background-image: url('../images/ky.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-lo {
+    background-image: url('../images/lo.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-la {
+    background-image: url('../images/la.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-lv {
+    background-image: url('../images/lv.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-lt {
+    background-image: url('../images/lt.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-lb {
+    background-image: url('../images/lb.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-mk {
+    background-image: url('../images/mk.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-mg {
+    background-image: url('../images/mg.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-ms {
+    background-image: url('../images/ms.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-ml {
+    background-image: url('../images/ml.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-mt {
+    background-image: url('../images/mt.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-mi {
+    background-image: url('../images/mi.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-mr {
+    background-image: url('../images/mr.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-mn {
+    background-image: url('../images/mn.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-my {
+    background-image: url('../images/my.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-ne {
+    background-image: url('../images/ne.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-no {
+    background-image: url('../images/no.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-ps {
+    background-image: url('../images/ps.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-fa {
+    background-image: url('../images/fa.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-pl {
+    background-image: url('../images/pl.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-pt {
+    background-image: url('../images/pt.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-pa {
+    background-image: url('../images/pa.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-ro {
+    background-image: url('../images/ro.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-ru {
+    background-image: url('../images/ru.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-sm {
+    background-image: url('../images/sm.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-gd {
+    background-image: url('../images/gd.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-sr {
+    background-image: url('../images/sr.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-st {
+    background-image: url('../images/st.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-sn {
+    background-image: url('../images/sn.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-sd {
+    background-image: url('../images/sd.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-si {
+    background-image: url('../images/si.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-sk {
+    background-image: url('../images/sk.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-sl {
+    background-image: url('../images/sl.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-so {
+    background-image: url('../images/so.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-es {
+    background-image: url('../images/es.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-su {
+    background-image: url('../images/su.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-sw {
+    background-image: url('../images/sw.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-sv {
+    background-image: url('../images/sv.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-tg {
+    background-image: url('../images/tg.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-ta {
+    background-image: url('../images/ta.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-te {
+    background-image: url('../images/te.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-th {
+    background-image: url('../images/th.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-tr {
+    background-image: url('../images/tr.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-uk {
+    background-image: url('../images/uk.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-ur {
+    background-image: url('../images/ur.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-uz {
+    background-image: url('../images/uz.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-vi {
+    background-image: url('../images/vi.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-cy {
+    background-image: url('../images/cy.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-xh {
+    background-image: url('../images/xh.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-yi {
+    background-image: url('../images/yi.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-yo {
+    background-image: url('../images/yo.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-flag span.ai-flag-zu {
+    background-image: url('../images/zu.png');
+}
+
+.ai-translator-dropdown ul li .ai-translator-name {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 10px;
+    flex-basis: 100%;
+}
+
+.ai-translator-dropdown.with-flag ul li .ai-translator-name {
+    padding: 0 10px;
+    flex-basis: calc(100% - 24px);
+}
+
+.ai-translator-dropdown ul li .ai-translator-check {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+
+.ai-translator-dropdown ul li.active .ai-translator-check {
+    display: flex;
+}
+
+.ai-translator-dropdown .simplebar-scrollbar {
+    width: 4px;
+    min-height: 20px;
+}
